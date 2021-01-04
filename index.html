@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krispy Kreme</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo2.png" alt="" class="logo">
+  </header>
+  <main>
+    <h1 class="main-title">ENCUESTA DE SATISFACCIÓN DEL CLIENTE</h1>
+    <p class="main-inst">Bienvenido a la encuesta de satisfacción del cliente de Krispy Kreme México. Valoramos mucho tus comentarios sinceros y apreciamos que inviertas tu tiempo en completar nuestra encuesta.</p>
+    <div class="container" id="formContainer">
+      <div class="row">
+        <div class="col-8">1. ¿Los productos entregados fueron los correctos? </div>
+        <div class="col-2">
+          <label for="p1">
+            <input type="radio" id="p1" name="op1">
+            Sí
+          </label>
+        </div>
+        <div class="col-2">
+          <label for="p2">
+            <input type="radio" id="p2" name="op1">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">2. ¿Los productos llegaron en buenas condiciones? </div>
+        <div class="col-2">
+          <label for="p3">
+            <input type="radio" id="p3" name="op2">
+            Sí
+          </label>
+        </div>
+        <div class="col-2">
+          <label for="p4">
+            <input type="radio" id="p4" name="op2">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">3. ¿Está satisfecho con la relación calidad/precio de los productos? </div>
+        <div class="col-2">
+          <label for="p5">
+            <input type="radio" id="p5" name="op3">
+            Sí
+          </label>
+        </div>
+        <div class="col-2">
+          <label for="p6">
+            <input type="radio" id="p6" name="op3">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">4. ¿Está satisfecho con el servicio de entrega de UberEats? </div>
+        <div class="col-2">
+          <label for="p7">
+            <input type="radio" id="p7" name="op4">
+            Sí
+          </label>
+        </div>
+        <div class="col-2">
+          <label for="p8">
+            <input type="radio" id="p8" name="op4">
+            No
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">5. ¿Volvería a realizar su pedido por medio de esta plataforma? </div>
+        <div class="col-2">
+          <label for="p9">
+            <input type="radio" id="p9" name="op5">
+            Sí
+          </label>
+        </div>
+        <div class="col-2">
+          <label for="p10">
+            <input type="radio" id="p11" name="op5">
+            No
+          </label>
+        </div>
+      </div>
+      
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Continuar
+      </button>
+    </div>
+    <button type="button" class="btnComenzar" id="btnComenzar">Comenzar</button>
+  </main>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Ahora que tengo tu atención 👀</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modalText">
+        Sabes que me encantas desde hace tiempo y creo que ya es momento de que compremos nuestras calcetas de Spiderman, así que: ¿Quieres ser mi novia? 💕         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="noBtn">No, lo siento :(</button>
+        <button type="button" class="btn btn-primary" id="siBtn">Sí! Claro que quiero ser tu novia</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
